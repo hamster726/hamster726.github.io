@@ -1,0 +1,84 @@
+
+body {
+    font-family: "Helvetica", sans-serif;
+}
+main {
+    margin: 0 10% 0 10%;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+.ramka {
+    padding: 20px;
+    color: #eeeeee;
+    background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+    /*border: 8px solid brown;*/
+    /*border-radius: 8px;*/
+    text-align: center;
+}
+
+.ramka p {
+    font-size: 60px;
+}
+
+.menu {
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+.menu-button {
+    text-align: center;
+    display: inline-block;
+    height: 24px;
+    min-width: 100px;
+    vertical-align: middle;
+    background: repeating-linear-gradient(135deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+    border-radius: 4px;
+    padding: 10px;
+    color: #eeeeee;
+    border: none;
+    text-decoration: none;
+}
+
+.row {
+    text-align: left;
+    margin: 5px;
+    border: 4px solid #eeeeee;
+    border-radius: 5px;
+    letter-spacing: 10em;
+}
+
+.row-creators{
+    text-align: left;
+    vertical-align: top;
+    display:inline-block;
+    padding: 10px;
+    min-height: 200px;
+    max-width: 700px;
+    letter-spacing: normal;
+}
+
+.row-creators-text{
+    /*margin-left: 100px;*/
+}
+.row-creators-avatar {
+
+}
+
+.description {
+    border: 3px solid #eeeeee;
+    border-radius: 5px;
+}
+
+.avatar {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+
+
+
+
