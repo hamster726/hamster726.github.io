@@ -1,7 +1,22 @@
-.img-demonstration {
-    text-align: center;
+body{
+}
+.demonstration {
+    text-align:center
+}
+.colblue {
+    font-size: 100px;
+    color: lavenderblush;
+    background-color: blue;
 }
 
-.img-block {
-    display: inline-block;
+.colred {
+    font-size: 100px;
+    color: lavenderblush;
+    background-color: red;
+}
+
+.colblack {
+    font-size: 100px;
+    color: lavenderblush;
+    background-color: black;
 }
