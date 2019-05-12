@@ -11,12 +11,24 @@ h1 {
 }
 
 aside {
-    color: #777777;
+    color: #fff;
+    background-color: #606dbc;
+    background-image: url("https://htmlacademy.ru/assets/courses/309/img/bg-partnership.svg");
+    text-align: center;
+    padding: 20px;
+    margin: 0 25%;
+}
+
+footer {
+    border-top: 2px solid #777777;
+    padding-top: 10px;
+    margin-top: 20px;
+    text-align: center;
 }
 .ramka {
     padding: 20px;
     color: #eeeeee;
-    background: repeating-linear-gradient(45deg, #231f20, #be1e2d   10px, #465298 10px, #465298 20px);
+    background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
     /*border: 8px solid brown;*/
     /*border-radius: 8px;*/
     text-align: center;
