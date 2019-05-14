@@ -85,7 +85,7 @@ footer {
 .row-creators-background-katya{
     background: gold;
     box-shadow: 0 -200px 100px -120px crimson inset;
-    animation: background 3s infinite alternate;
+    animation: backgroun 3s infinite alternate;
 }
 /*@keyframes background {*/
 /*    50% {*/
