@@ -28,7 +28,6 @@ footer {
 .ramka {
     padding: 20px;
     color: #eeeeee;
-    background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
     /*border: 8px solid brown;*/
     /*border-radius: 8px;*/
     text-align: center;
@@ -59,6 +58,20 @@ footer {
 
 .backgroun-linear-gradient {
     background: repeating-linear-gradient(135deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+    animation: background 0.4s infinite;
+}
+
+@keyframes background {
+    22%{
+        background: repeating-linear-gradient(45deg, #1b75bc, #1b75bc 10px, #231f20 10px, #231f20 20px) 0px 0px;
+    }
+    55% {
+        background: repeating-linear-gradient(90deg, #231f20, #231f20 10px, #be1e2d 10px, #be1e2d 20px) 0px 0px;
+    }
+    88%{
+        background: repeating-linear-gradient(135deg, #00a79d , #00a79d  10px, #262262  10px, #262262  20px) 0px 1px;
+    }
+
 }
 
 .row {
@@ -97,7 +110,39 @@ footer {
     border-radius: 50%;
 }
 
+@-webkit-keyframes avatar {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
 
+}
+.avatar
+{
+    -webkit-animation-name:             rotate;
+    -webkit-animation-duration:         0.1s;
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-transition-timing-function: linear;
+}
+
+@-webkit-keyframes avatar {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+
+}
+.avatar
+{
+    -webkit-animation-name:             rotate;
+    -webkit-animation-duration:         0.1s;
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-transition-timing-function: linear;
+}
 
 .bottom-img-joke {
     text-align: inherit;
