@@ -1,63 +1,96 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="script" href="script.js">
 
+<style>
+
+
+    body {
+        margin: 0px;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+
+    header {
+        background: rgb(6, 13, 19);
+        margin-bottom: 20px;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        height: 60px;
+        color: white;
+    }
+
+    h1 {
+        margin-top: 20%;
+        text-align: center;
+        font-size: 10em;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .main-menu {
+        margin-left: 150px;
+        width: 500px;
+        color: white;
+    }
+
+    .main-menu li {
+        display: inline;
+        margin: 5px 10px;
+    }
+
+
+    .header-content-right {
+        position: absolute;
+        right: 1em;
+        top: 1em;
+    }
+
+    li {
+        padding: 26px 10px;
+    }
+    li:hover {
+        background: rgb(19, 36, 49);
+        padding: 26px 10px;
+    }
+
+    .logo {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <title>PlayDay inc.</title>
 </head>
 <body>
 <header>
-    <div class="ramka">
-        <p>PlayDay</p>
+
+    <div>
+        <a href="/" class="logo"><img src="resourses/img/icon-3.svg" width="150"></a>
     </div>
-    <div class="menu">
-        <a href="/" class="menu-button">
-            Главная
-        </a>
-
-
-        <a href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BB%D0%B5%D0%BF%D1%83%D0%B7%D0%B8%D0%BA%D0%B8"
-           class="menu-button"
-           target="_blank">
-            О нас
-        </a>
-
-        <a href="creators.html"
-           class="menu-button">
-            Создатели
-        </a>
-
-        <a href="https://pornhub.com/" class="menu-button" target="_blank">
-            Развлечения
-        </a>
+    <div class="main-menu">
+        <ul type="none">
+            <a href="#"><li>О нас</li></a>
+            <a href="#"><li>Развлечения</li></a>
+<!--            <li></li>-->
+        </ul>
     </div>
 
+    <div class="header-content-right">
+        <a href="#">Добро пожаловать</a>
+    </div>
 </header>
 <main>
-    <h1>Блог необразованных друзей без целей для дебилов</h1>
-    <section class="description">
-        <p>
-            Привет, друг!
-        </p>
-        <p>
-            Ты попал на блог общих друзей, которых зову Женя, Катя, Саша и Вова. Эти 4 человека
-            <del>умеют управлять 4-мя стихиями: земля, огонь, вода, воздух</del>
-            дружат с давних времён метрополита. Они пережили 4 ледниковых периода, Костю и переживут тебя.
-            Так что сьебался нахуй отсюдова мразь паганая, пока мы тебя не нашли и не выебали.
-        </p>
-        <p>
-            Шучу. Захади! Тебе всегда здесь рады :)
-        </p>
-    </section>
-
+    <h1>Welcome</h1>
 </main>
-<aside>
-    Здесь могла быть Ваша реклама
-</aside>
 <footer>
-    <p>Подвал сайта</p>
+
 </footer>
 </body>
 </html>

@@ -179,7 +179,11 @@ footer {
     background: lightgray;
     border-radius: 5px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); /* 5 - ползунок */
+    color: #00aeef;
+    color: #be1e2d;
 }
+
+
 
 
 
