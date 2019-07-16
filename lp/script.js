@@ -84,8 +84,8 @@ const phrases = [
     'игры',
     'разврат',
     'маты',
-    'разбитые лица',
     'дикий смех',
+    'разбитые лица',
     'только здесь',
     'и нигде больше'];
 
@@ -99,4 +99,56 @@ const next = () => {
     });
     counter = (counter + 1) % phrases.length;
 };
+
+// ——————————————————————————————————————————————————
+// particles background
+// ——————————————————————————————————————————————————
+
+let particlesAdded = false;
+
+const replaceBackground = () => {
+    if (document.documentElement.clientWidth < 1024 && !particlesAdded) {
+        particlesAdded = true;
+
+        const style = '/resourses/particles-background/particles-style.css';
+
+        const script1 = 'http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
+        const script2 = 'http://threejs.org/examples/js/libs/stats.min.js';
+        const script3 = '/resourses/particles-background/particles-script.js';
+
+        let headElement = document.querySelector('head');
+        let domElementLink = document.createElement('link');
+        domElementLink.rel = 'stylesheet';
+        domElementLink.href = style;
+        headElement.appendChild(domElementLink);
+
+
+        let bodyElement = document.querySelector('body');
+
+        let domElement = document.createElement('div');
+        domElement.id = 'particles-js';
+        bodyElement.appendChild(domElement);
+        bodyElement.insertBefore(domElement, bodyElement.firstChild);
+
+        let domElementScript1 = document.createElement('script');
+        let domElementScript2 = document.createElement('script');
+        let domElementScript3 = document.createElement('script');
+
+        domElementScript2.src = script1;
+        domElementScript1.src = script2;
+        domElementScript3.src = script3;
+
+        document.head.appendChild(domElementScript1);
+        document.head.appendChild(domElementScript2);
+        document.head.appendChild(domElementScript3);
+
+
+    }
+};
+
 next();
+window.onload = replaceBackground();
+
+
+window.addEventListener('resize', replaceBackground);
+
