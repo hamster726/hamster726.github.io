@@ -112,8 +112,8 @@ const replaceBackground = () => {
 
         const style = '/resourses/particles-background/particles-style.css';
 
-        const script1 = 'http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
-        const script2 = 'http://threejs.org/examples/js/libs/stats.min.js';
+        const script1 = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
+        const script2 = 'https://threejs.org/examples/js/libs/stats.min.js';
         const script3 = '/resourses/particles-background/particles-script.js';
 
         let headElement = document.querySelector('head');
