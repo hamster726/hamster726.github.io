@@ -143,6 +143,16 @@ const replaceBackground = () => {
         document.head.appendChild(domElementScript3);
 
 
+    } else if (!particlesAdded) {
+        particlesAdded = true;
+        let iframe = document.createElement('iframe');
+        iframe.classList.add('background-video');
+        iframe.src = 'https://player.vimeo.com/video/147238265?autoplay=1&controls=1&muted=1';
+        iframe.allow = 'autoplay; fullscreen';
+        iframe.allowFullscreen = true;
+
+        document.body.insertBefore(iframe,  document.body.firstChild);
+        //<iframe class="background-video" src="https://player.vimeo.com/video/147238265?autoplay=1&controls=1&muted=1" allow="autoplay; fullscreen" allowfullscreen></iframe>
     }
 };
 
