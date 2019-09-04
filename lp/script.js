@@ -110,11 +110,11 @@ const replaceBackground = () => {
     if (document.documentElement.clientWidth < 1024 && !particlesAdded) {
         particlesAdded = true;
 
-        const style = '/resourses/particles-background/particles-style.css';
+        const style = '/resources/particles-background/particles-style.css';
 
-        const script1 = '/resourses/particles-background/particles.min.js';
-        const script2 = '/resourses/particles-background/stats.min.js';
-        const script3 = '/resourses/particles-background/particles-script-lp.js';
+        const script1 = '/resources/particles-background/particles.min.js';
+        const script2 = '/resources/particles-background/stats.min.js';
+        const script3 = '/resources/particles-background/particles-script-lp.js';
 
         let headElement = document.querySelector('head');
         let domElementLink = document.createElement('link');
@@ -145,14 +145,25 @@ const replaceBackground = () => {
 
     } else if (!particlesAdded) {
         particlesAdded = true;
-        let iframe = document.createElement('iframe');
-        iframe.classList.add('background-video');
-        iframe.src = 'https://player.vimeo.com/video/147238265?autoplay=1&controls=1&muted=1';
-        iframe.allow = 'autoplay; fullscreen';
-        iframe.allowFullscreen = true;
-
-        document.body.insertBefore(iframe,  document.body.firstChild);
+        // let iframe = document.createElement('iframe');
+        // iframe.classList.add('background-video');
+        // iframe.src = 'https://player.vimeo.com/video/147238265?autoplay=1&controls=1&muted=1';
+        // iframe.allow = 'autoplay; fullscreen';
+        // iframe.allowFullscreen = true;
+        //
+        // document.body.insertBefore(iframe,  document.body.firstChild);
         //<iframe class="background-video" src="https://player.vimeo.com/video/147238265?autoplay=1&controls=1&muted=1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+        let video = document.createElement('video');
+
+        video.classList.add('background-video');
+        video.src = '/resources/files/playback.mp4';
+        video.autoplay = true;
+        video.controls = false;
+        video.muted = true;
+        video.loop = true;
+
+        document.body.insertBefore(video, document.body.firstChild);
     }
 };
 

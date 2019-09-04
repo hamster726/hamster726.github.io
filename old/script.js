@@ -7,7 +7,7 @@ function joke_activation() {
 
 function joke_start() {
     // var audio = new Audio();
-    //     // audio.src = '/resourses/files/HARDBASS.mp3/';
+    //     // audio.src = '/resources/files/HARDBASS.mp3/';
     //     // audio.autoplay = true;
     if (document.getElementById('audio-joke') != null){
         //deleting music
@@ -25,7 +25,7 @@ function joke_start() {
         //playing music
         var x = document.createElement('audio');
         x.setAttribute('id','audio-joke');
-        x.setAttribute('src','resourses/files/HARDBASS.mp3')
+        x.setAttribute('src','resources/files/HARDBASS.mp3')
         x.setAttribute('preload', '');
         x.setAttribute('loop', '');
         x.setAttribute('autoplay', '');

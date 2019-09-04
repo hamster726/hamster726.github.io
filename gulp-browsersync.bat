@@ -1,0 +1,1 @@
+browser-sync start runas /user:Hamster726 /high --server --files "style/*.css,src/*.js,/*.html,*.*"
