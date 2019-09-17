@@ -1,0 +1,40 @@
+html, body {
+    height: 100%;
+}
+
+.logo {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.2em;
+}
+
+.stub {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.stub-header {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.stub-text {
+}
+
+.stub-video {
+
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+}
+
+@media screen and (max-width: 978px) {
+    html, body {
+
+    }
+}

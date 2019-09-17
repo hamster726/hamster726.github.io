@@ -4,67 +4,82 @@
     <title>PlayDay inc.</title>
     <meta charset="UTF-8">
     <meta name="theme-color" content="#212529">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--=====BOOTSTRAP 4=====-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <!--====================-->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="resources/particles-background/particles-style.css">
     <link rel="shortcut icon" href="/resources/img/icon-2.png">
 </head>
 
-<body>
+<body class="d-flex flex-column">
 <header>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="particles-js">
-    <a class="navbar-brand zindex" href="/main.html"><img src="resources/img/icon-3.svg" width="100"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand zindex logo" href="/main.html">PLAYDAY</a>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active zindex">
-                <a class="nav-link" href="#">Создатели <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active zindex">
-                <a class="nav-link" href="#">О нас <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item zindex">
-                <a class="nav-link" href="/old/index.html">Старая версия</a>
-            </li>
-<!--            Выпадающая форма-->
-            <!--
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-            -->
-<!--            Отключённая кнопка-->
-            <!--
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
-            </li>
-            -->
-        </ul>
-        <!--
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Что хотите найти?" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
-        </form>
-        -->
-    </div>
-</nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active zindex">
+                    <a class="nav-link" href="#">Создатели <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active zindex">
+                    <a class="nav-link" href="#">О нас <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item zindex">
+                    <a class="nav-link" href="/old/index.html">Старая версия</a>
+                </li>
+            </ul>
+        </div>
+
+        <li class="nav-item dropdown" style="list-style-type: none">
+            <a class="nav-link dropdown-toggle navbar-text" href="#" id="navbarDropdown" role="button"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Проекты автора
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item disabled" href="projects/find-me-a-movie/index.html">find me a movie</a>
+                <a class="dropdown-item" href="projects/alpha-centauri-shop/index.html">internet market</a>
+            </div>
+        </li>
+    </nav>
 </header>
 
 <main>
+    <div class="container text-center">
+            <div class="stub">
+                <div class="stub-header">Добро пожаловать</div>
+                <div class="stub-text">На сайт канала PlayDay</div>
+                <hr>
+                <div class="stub-text">Мы рады каждому из Вас</div>
+                <hr>
+                <div class="stub-text">В данный момент сайт находится в разработке. Пока мы ковыряемся с сайтом, предлагаем посмотреть наше последнее видео</div>
+                <hr>
+                <div class="stub-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/n6TIO_NbVss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
 
+            </div>
+    </div>
 </main>
-<script src="/resources/particles-background/particles.min.js"></script> <!-- stats.js lib -->
-<script src="/resources/particles-background/stats.min.js"></script>
-<script src="/resources/particles-background/particles-script.js"></script>
+
+<footer class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+        <small>Все права незащищены и могут быть стырены  2019 &copy; PlayDay inc. </small>
+    </div>
+</footer>
 </body>
 </html>
