@@ -82,10 +82,10 @@ footer {
 
 }
 
-.row-creators-background-katya{
-    background: gold;
-    box-shadow: 0 -200px 100px -120px crimson inset;
-    animation: backgroun 3s infinite alternate;
+.row-creators-background-sasha{
+    background: violet;
+    box-shadow: 0 -200px 100px -120px darkviolet inset;
+    animation: background 20s infinite alternate;
 }
 /*@keyframes background {*/
 /*    50% {*/
@@ -93,20 +93,20 @@ footer {
 /*        box-shadow: 0 -200px 100px -100px yellowgreen inset;*/
 /*    }*/
 /*}*/
-.row-creators-background-sasha {
-    box-shadow: 0 -150px 70px -120px red inset,
-    0 -220px 70px -120px orange inset,
-    0 -280px 70px -120px gold inset;
-    border-radius: 20px;
+.row-creators-background-katya {
+    box-shadow: 0 -150px 70px -120px deepskyblue inset,
+    0 -220px 70px -120px dodgerblue inset,
+    0 -280px 70px -120px darkslateblue inset;
+    border-radius: 5px;
     /*border: 10px solid white;*/
-    animation: background 8s infinite alternate;
+    animation: background 20s infinite alternate;
 }
 
 @keyframes background {
     50% {
         background: darkviolet;
         box-shadow: 0 -140px 70px -120px mediumorchid inset,
-        0 -210px 70px -120px teal inset,
+        0 -210px 70px -120px darkmagenta inset,
         0 -280px 70px -120px plum inset;
     }
 }

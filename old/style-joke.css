@@ -99,6 +99,26 @@ footer {
 
 }
 
+.row-creators-background-sasha{
+    background: violet;
+    box-shadow: 0 -200px 100px -120px darkviolet inset;
+    animation: background 20s infinite alternate;
+}
+/*@keyframes background {*/
+/*    50% {*/
+/*        background: skyblue;*/
+/*        box-shadow: 0 -200px 100px -100px yellowgreen inset;*/
+/*    }*/
+/*}*/
+.row-creators-background-katya {
+    box-shadow: 0 -150px 70px -120px deepskyblue inset,
+    0 -220px 70px -120px dodgerblue inset,
+    0 -280px 70px -120px darkslateblue inset;
+    border-radius: 5px;
+    /*border: 10px solid white;*/
+    animation: background 20s infinite alternate;
+}
+
 .description {
     border: 3px solid #eeeeee;
     border-radius: 5px;
