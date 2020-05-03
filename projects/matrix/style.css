@@ -1,0 +1,16 @@
+html, body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content:center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 72px;
+    font-weight: bold;
+    color: #0f0;
+    font-family: Roboto;
+    text-transform: uppercase;
+}
